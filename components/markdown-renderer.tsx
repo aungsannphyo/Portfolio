@@ -11,9 +11,11 @@ interface MarkdownRendererProps {
 }
 
 const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content }) => {
-  const [fontSize, setFontSize] = useState("0.7rem"); // mobile default
+  const [fontSize, setFontSize] = useState("0.7rem");
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     const updateFontSize = () => {
       setFontSize(window.innerWidth >= 768 ? "1rem" : "0.7rem");
     };
@@ -21,6 +23,8 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content }) => {
     window.addEventListener("resize", updateFontSize);
     return () => window.removeEventListener("resize", updateFontSize);
   }, []);
+
+  if (!mounted) return null;
 
   const components: Components = {
     code({ className, children, ...props }) {

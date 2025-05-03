@@ -8,17 +8,19 @@ export async function fetchMarkdownFromGithub(article: Article): Promise<string>
     const url = path
         ? `${baseUrl}/${user}/${repo}/${branch}/${path}/${markdown}`
         : `${baseUrl}/${user}/${repo}/${branch}/${markdown}`;
-    console.log(process.env.GITHUB_KEY)
-    const response = await fetch(url, {
-        cache: "no-store",
 
-    });
+    try {
+        const response = await fetch(url, {
+            cache: "no-store",
 
-    if (!response.ok) {
-        throw new Error(`Failed to fetch markdown: ${response.status}`);
+        });
+        if (!response.ok) {
+            throw new Error(`Failed to fetch markdown: ${response.status}`);
+        }
+        return await response.text();
+    } catch (error) {
+        throw new Error(`Error fetching markdown: ${error}`);
     }
-
-    return await response.text();
 
 }
 
@@ -32,8 +34,10 @@ export async function getMarkdownArticleData(
     if (!article) {
         throw new Error("Article not found");
     }
-
-    const markdown = await fetchMarkdownFromGithub(article);
-
-    return { markdown, article };
+    try {
+        const markdown = await fetchMarkdownFromGithub(article);
+        return { markdown, article };
+    } catch (error) {
+        throw new Error(`Error getting markdown data for article ${slug}: ${error}`)
+    }
 }

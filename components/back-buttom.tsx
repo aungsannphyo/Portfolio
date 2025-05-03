@@ -10,7 +10,7 @@ const BackButton = () => {
     <button
       onClick={() => router.back()}
       className="flex items-center gap-2 text-black border
-       border-black px-4 py-1 rounded 
+       border-black px-4 my-8 py-1 rounded 
        hover:bg-black hover:text-white transition cursor-pointer"
     >
       <IoArrowBack />
