@@ -15,30 +15,43 @@ const behavioral: Array<Article> = [{
     imageUrl: DSImage
 },]
 
-const creational: Array<Article> = [{
-    sectionTitle: "Singleton Pattern",
-    slug: "singleton-pattern",
-    user: "aungsannphyo",
-    repo: "design-pattern",
-    branch: "master",
-    path: "creational-patterns",
-    markdown: "singleton-pattern.md",
-    categoryKey: DESIGN_PATTERNS,
-    subCategoryKey: CE_PATTERNS,
-    imageUrl: DSImage
-},
-{
-    sectionTitle: "Factory Method",
-    slug: "factory-method",
-    user: "aungsannphyo",
-    repo: "design-pattern",
-    branch: "master",
-    path: "creational-patterns",
-    markdown: "factory-method.md",
-    categoryKey: DESIGN_PATTERNS,
-    subCategoryKey: CE_PATTERNS,
-    imageUrl: DSImage
-},]
+const creational: Array<Article> = [
+    {
+        sectionTitle: "Singleton Pattern",
+        slug: "singleton-pattern",
+        user: "aungsannphyo",
+        repo: "design-pattern",
+        branch: "master",
+        path: "creational-patterns",
+        markdown: "singleton-pattern.md",
+        categoryKey: DESIGN_PATTERNS,
+        subCategoryKey: CE_PATTERNS,
+        imageUrl: DSImage
+    }, {
+        sectionTitle: "Builder Pattern",
+        slug: "builder-pattern",
+        user: "aungsannphyo",
+        repo: "design-pattern",
+        branch: "master",
+        path: "creational-patterns",
+        markdown: "builder-pattern.md",
+        categoryKey: DESIGN_PATTERNS,
+        subCategoryKey: CE_PATTERNS,
+        imageUrl: DSImage
+    },
+
+    {
+        sectionTitle: "Factory Method",
+        slug: "factory-method",
+        user: "aungsannphyo",
+        repo: "design-pattern",
+        branch: "master",
+        path: "creational-patterns",
+        markdown: "factory-method.md",
+        categoryKey: DESIGN_PATTERNS,
+        subCategoryKey: CE_PATTERNS,
+        imageUrl: DSImage
+    },]
 
 const structural: Array<Article> = [{
     sectionTitle: "Adapter Pattern",
