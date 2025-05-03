@@ -24,7 +24,6 @@ export async function fetchMarkdownFromGithub(article: Article): Promise<string>
 
 }
 
-
 export async function getMarkdownArticleData(
     slug: string,
     categoryKey: string
