@@ -7,6 +7,7 @@ export const DESIGN_PATTERNS = "design_patterns"
 export const OTHER = "other"
 export const BE_PATTERNS = "behavioral_patterns"
 export const CE_PATTERNS = "creational_patterns"
+export const ST_PATTENRS = "structural-patterns"
 export const SOLID = "solid"
 
 
@@ -22,6 +23,10 @@ const contentSubCategories: ContentSubCategory[] = [
     {
         subtitle: "SOLID",
         subCategoryKey: SOLID
+    },
+    {
+        subtitle: "Structural Patterns",
+        subCategoryKey: ST_PATTENRS
     },
     {
         subtitle: "Other",
