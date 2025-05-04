@@ -1,5 +1,5 @@
 import BackButton from "@/components/back-buttom";
-import MarkdownRenderer from "@/components/markdown-renderer";
+import MarkdownRenderer from "@/features/articles/markdown-renderer";
 import { getMarkdownArticleData } from "@/api/markdown";
 
 export default async function ArticleDetails({

@@ -3,8 +3,8 @@
 import React from "react";
 import Image from "next/image";
 import universityLogo from "@/public/university.png";
-import ContactMe from "@/components/contact-me/contact-me";
-import { me, summary } from "@/type/about_me/about";
+import ContactMe from "@/features/personal/contact-me/contact-me";
+import { me, summary } from "@/features/personal/about-me/data/about";
 
 const AboutMe = () => {
   return (

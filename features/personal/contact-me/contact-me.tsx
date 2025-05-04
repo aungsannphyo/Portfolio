@@ -3,7 +3,7 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaDiscord, FaTelegram } from "react-icons/fa";
 import ContactMeIcon from "./contact-me-icon";
-import { contactLink } from "@/type/about_me/about";
+import { contactLink } from "@/features/personal/about-me/data/about";
 
 const ContactMe = () => {
   return (

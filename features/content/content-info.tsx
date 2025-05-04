@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { Article } from "@/type/articles/content-type";
+import { Article } from "../articles/types/article-type";
 
 const ContentInfo = ({ articles }: { articles: Article[] }) => {
   const [inView, setInView] = useState<boolean[]>(

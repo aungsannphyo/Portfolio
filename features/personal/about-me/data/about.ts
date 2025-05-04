@@ -1,7 +1,7 @@
 import ImminLogo from "@/public/companys/imminsg_logo.jpeg"
 import PicoLogo from "@/public/companys/pico_logo.jpeg"
 import MHSLogo from "@/public/companys/myanmar_high_society_logo.jpeg"
-import { About, Company, ContactLink, Summary } from "./about-type"
+import { About, Company, ContactLink, Summary } from "../types/about-type"
 
 export const summary: Summary = {
     firstSummary: `Hi, I'm a Software Engineer who loves turning ideas 

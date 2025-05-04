@@ -1,7 +1,7 @@
 "use client";
 
+import ContentCategories from "@/features/content/content-categories";
 import React from "react";
-import ContentCategories from "@/components/content/content-categories";
 
 const ContentPage = () => {
   return (

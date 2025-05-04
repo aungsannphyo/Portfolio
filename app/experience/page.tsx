@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
-import { experience } from "@/type/about_me/about";
+import { experience } from "@/features/personal/about-me/data/about";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import ExperienceTabContent from "@/components/experience-tab-content";
+import ExperienceDetails from "@/features/experience/experience-details";
 import { IoArrowDown } from "react-icons/io5";
 
 const ExperiencePage = () => {
@@ -33,7 +33,7 @@ const ExperiencePage = () => {
 
         {experience.map((company) => (
           <TabsContent key={company.name} value={company.name}>
-            <ExperienceTabContent company={company} />
+            <ExperienceDetails company={company} />
           </TabsContent>
         ))}
       </Tabs>
@@ -60,7 +60,7 @@ const ExperiencePage = () => {
         {experience
           .filter((company) => company.name === selectedTab)
           .map((company) => (
-            <ExperienceTabContent key={company.name} company={company} />
+            <ExperienceDetails key={company.name} company={company} />
           ))}
       </div>
     </section>

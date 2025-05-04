@@ -1,13 +1,14 @@
 "use client";
 
 import React, { useState } from "react";
-import ContentCategoryButton from "./content-category-button";
-import { contentCategories } from "@/type/articles/content";
-import { ES6 } from "@/type/articles/content";
-import { Article, ContentCategory } from "@/type/articles/content-type";
+import { contentCategories } from "@/features/content/data/content";
+import { ES6 } from "@/type/type";
+import { ContentCategory } from "@/features/content/types/content-type";
 import { IoArrowDown } from "react-icons/io5";
-import { getContentListByKey } from "@/handler/content-handler";
+import { getContentListByKey } from "@/services/content-handler";
+import ContentCategoryButton from "./content-category-button";
 import ContentInfo from "./content-info";
+import { Article } from "../articles/types/article-type";
 
 const ContentCategories = () => {
   const [categoryKey, setCategoryKey] = useState<string>(ES6);
@@ -20,7 +21,7 @@ const ContentCategories = () => {
 
   return (
     <React.Fragment>
-      <div className="hidden sm:flex justify-center gap-6 mb-12 overflow-x-auto">
+      <div className="hidden sm:flex gap-6 mb-12 overflow-x-auto">
         <div className="flex flex-wrap w-max gap-3 sm:gap-4 px-1 py-2">
           {contentCategories.map((category: ContentCategory) => (
             <ContentCategoryButton

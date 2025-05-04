@@ -1,6 +1,7 @@
-import { Article } from "@/type/articles/content-type";
-import { designPatternArticle } from "@/articles-data/design-patterns-content";
-import { es6Article } from "@/articles-data/es6-content";
+import { designPatternArticle } from "@/features/articles/data/design-patterns-content"
+import { es6Article } from "@/features/articles/data/es6-content"
+import { Article } from "@/features/articles/types/article-type"
+
 
 
 interface ArticleHandler {

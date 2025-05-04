@@ -1,7 +1,7 @@
 "use client";
 
-import AboutMe from "@/components/about-me/about-me";
-import ProfileImage from "@/components/about-me/profile-image";
+import AboutMe from "@/features/personal/about-me/about-me";
+import ProfileImage from "@/features/personal/about-me/profile-image";
 import Footer from "@/components/footer";
 
 const AboutMePage = () => {

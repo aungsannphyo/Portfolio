@@ -1,6 +1,6 @@
 "use client";
 
-import { Company } from "@/type/about_me/about-type";
+import { Company } from "@/features/personal/about-me/types/about-type";
 import React from "react";
 import Image from "next/image";
 
@@ -8,7 +8,7 @@ interface ICompany {
   company: Company;
 }
 
-const ExperienceTabContent: React.FC<ICompany> = ({ company }) => {
+const ExperienceDetails: React.FC<ICompany> = ({ company }) => {
   return (
     <div className="border border-black p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 bg-white">
       <div className="flex flex-col md:flex-row items-start md:items-center gap-4">
@@ -57,4 +57,4 @@ const ExperienceTabContent: React.FC<ICompany> = ({ company }) => {
   );
 };
 
-export default ExperienceTabContent;
+export default ExperienceDetails;
