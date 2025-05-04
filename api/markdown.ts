@@ -1,5 +1,5 @@
+import { Article } from "@/features/articles/types/article-type";
 import { getArticle } from "@/services/article-handler";
-import { Article } from "@/features/content/types/content-type";
 
 
 export async function fetchMarkdownFromGithub(article: Article): Promise<string> {
