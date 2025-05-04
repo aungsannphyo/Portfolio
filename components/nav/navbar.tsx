@@ -1,54 +1,11 @@
 "use client";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useState } from "react";
-import {
-  IoPersonOutline,
-  IoPerson,
-  IoDocumentTextOutline,
-  IoDocumentText,
-  IoMenu,
-  IoClose,
-  IoBriefcaseOutline,
-  IoBriefcase,
-} from "react-icons/io5";
-
-const navItems = [
-  {
-    name: "About Me",
-    href: "/",
-    icon: (active: boolean) =>
-      active ? (
-        <IoPerson size={20} className="mr-2" />
-      ) : (
-        <IoPersonOutline size={20} className="mr-2" />
-      ),
-  },
-  {
-    name: "Content",
-    href: "/content",
-    icon: (active: boolean) =>
-      active ? (
-        <IoDocumentText size={20} className="mr-2" />
-      ) : (
-        <IoDocumentTextOutline size={20} className="mr-2" />
-      ),
-  },
-  {
-    name: "Experience",
-    href: "/experience",
-    icon: (active: boolean) =>
-      active ? (
-        <IoBriefcase size={20} className="mr-2" />
-      ) : (
-        <IoBriefcaseOutline size={20} className="mr-2" />
-      ),
-  },
-];
+import { IoMenu, IoClose } from "react-icons/io5";
+import { DesktopNavItems, MobileNavItems } from "./navbar-items";
+import Link from "next/link";
 
 const Navbar = () => {
-  const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -60,28 +17,7 @@ const Navbar = () => {
           </Link>
         </h1>
         {/* Desktop Nav */}
-        <ul className="hidden md:flex space-x-8 text-sm font-medium">
-          {navItems.map(({ name, href, icon }) => {
-            const isActive = pathname === href;
-            return (
-              <li key={href}>
-                <Link href={href} className="flex items-center group">
-                  {icon(isActive)}
-                  <span
-                    className={`inline-block transition-all duration-200 ${
-                      isActive
-                        ? "border-b-2 border-black pb-1 font-semibold"
-                        : "group-hover:opacity-60"
-                    }`}
-                  >
-                    {name}
-                  </span>
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
-
+        <DesktopNavItems />
         {/* Hamburger Icon */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
@@ -93,32 +29,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      {menuOpen && (
-        <div className="md:hidden px-6 mt-4 space-y-4 text-md font-medium">
-          {navItems.map(({ name, href, icon }) => {
-            const isActive = pathname === href;
-            return (
-              <Link
-                key={href}
-                href={href}
-                onClick={() => setMenuOpen(false)} // Close on click
-                className="flex items-center group"
-              >
-                {icon(isActive)}
-                <span
-                  className={`inline-block transition-all duration-200 ${
-                    isActive
-                      ? "border-b-2 border-black pb-1 font-semibold"
-                      : "group-hover:opacity-60"
-                  }`}
-                >
-                  {name}
-                </span>
-              </Link>
-            );
-          })}
-        </div>
-      )}
+      {menuOpen && <MobileNavItems setMenuOpen={setMenuOpen} />}
     </nav>
   );
 };

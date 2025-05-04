@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { contentCategories } from "@/features/content/data/content";
-import { ES6 } from "@/type/type";
+import { ES6 } from "@/enum/category-enum";
 import { ContentCategory } from "@/features/content/types/content-type";
 import { IoArrowDown } from "react-icons/io5";
 import { getContentListByKey } from "@/services/content-handler";

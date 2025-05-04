@@ -10,7 +10,6 @@ const ContentPage = () => {
         📢 <strong>Announcement:</strong> To ensure you can read the contents
         properly, it is necessary to keep the VPN turned on.
       </div>
-      <h2 className="text-3xl font-bold text-center">My Articles</h2>
       <ContentCategories />
     </main>
   );

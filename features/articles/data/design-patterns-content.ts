@@ -1,6 +1,6 @@
 import DSImage from "@/public/language-image/ds.jpg"
 import { Article } from "../types/article-type";
-import { BE_PATTERNS, CE_PATTERNS, DESIGN_PATTERNS, OTHER, SOLID, ST_PATTENRS } from "@/type/type";
+import { BE_PATTERNS, CE_PATTERNS, DESIGN_PATTERNS, OTHER, SOLID, ST_PATTENRS } from "@/enum/category-enum";
 
 const behavioral: Array<Article> = [{
     sectionTitle: "Chain Of Responsibility",

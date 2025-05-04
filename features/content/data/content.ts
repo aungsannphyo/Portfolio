@@ -1,4 +1,4 @@
-import { BE_PATTERNS, CE_PATTERNS, DESIGN_PATTERNS, ES6, OTHER, SOLID, ST_PATTENRS } from "@/type/type"
+import { BE_PATTERNS, CE_PATTERNS, DESIGN_PATTERNS, ES6, OTHER, SOLID, ST_PATTENRS } from "@/enum/category-enum"
 import { ContentCategory, ContentSubCategory } from "../types/content-type"
 
 

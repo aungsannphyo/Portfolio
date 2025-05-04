@@ -1,7 +1,7 @@
 
 import JSImage from "@/public/language-image/js.jpg"
 import { Article } from "../types/article-type"
-import { ES6 } from "@/type/type"
+import { ES6 } from "@/enum/category-enum"
 
 export const es6Article: Array<Article> = [
         {
