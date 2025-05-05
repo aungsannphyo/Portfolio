@@ -24,7 +24,7 @@ export const projects: Project[] = [
         link: "https://immin.io/"
     },
     {
-        title: " Xallet Cryptocurrency Wallet Mobile",
+        title: " Xallet Cryptocurrency Wallet",
         summary: "A digital wallet solution that combines the security of Digital Wallet with the capabilities to invest and exchange.",
         responsibilities: [
             "Led the development of user-friendly interfaces for authorization, bank transfers (withdraw/deposit), and KYC verification processes.",
