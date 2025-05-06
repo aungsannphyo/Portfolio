@@ -3,7 +3,8 @@ import Navbar from "@/components/nav/navbar";
 import { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
 
-export const defaultMeta: Metadata = {
+export const metadata: Metadata = {
+  metadataBase: new URL("https://www.aungsannphyo.me"),
   title: "Aung Sann Phyo – Software Engineer",
   description:
     "Personal portfolio of Aung Sann Phyo, a software engineer skilled in frontend, backend and mobile technologies.",
@@ -15,7 +16,7 @@ export const defaultMeta: Metadata = {
     siteName: "Aung Sann Phyo Portfolio",
     images: [
       {
-        url: "https://www.aungsannphyo.me/profile.jpeg",
+        url: "/profile.jpeg",
         width: 1200,
         height: 627,
         alt: "Aung Sann Phyo – Software Engineer",
@@ -29,7 +30,7 @@ export const defaultMeta: Metadata = {
     title: "Aung Sann Phyo – Software Engineer",
     description:
       "Personal portfolio of Aung Sann Phyo, a software engineer skilled in frontend, backend and mobile technologies.",
-    images: ["https://www.aungsannphyo.me/profile.jpeg"],
+    images: ["/profile.jpeg"],
   },
 };
 
