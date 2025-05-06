@@ -34,7 +34,7 @@ const behavioral: Array<Article> = [
         repo: "design-pattern",
         branch: "master",
         path: "behavioral-patterns",
-        markdown: "strategy-pattern",
+        markdown: "strategy-pattern.md",
         categoryKey: ContentCategoryEnum.DESIGN_PATTERNS,
         subCategoryKey: ContentSubCategoryEnum.BE_PATTERNS,
         imageUrl: DSImage
