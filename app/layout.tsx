@@ -1,27 +1,34 @@
 import "./globals.css";
 import Navbar from "@/components/nav/navbar";
 import { Metadata } from "next";
-import { defaultMeta } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: defaultMeta.title,
-  description: defaultMeta.description,
+export const defaultMeta: Metadata = {
+  title: "Aung Sann Phyo – Software Engineer",
+  description:
+    "Personal portfolio of Aung Sann Phyo, a software engineer skilled in frontend, backend and mobile technologies.",
   openGraph: {
-    title: defaultMeta.title,
-    description: defaultMeta.description,
-    url: defaultMeta.url,
+    title: "Aung San Xallet – Software Engineer",
+    description:
+      "Personal portfolio of Aung Sann Phyo, a software engineer skilled in frontend, backend and mobile technologies.",
+    url: "https://www.aungsannphyo.me",
+    siteName: "Aung Sann Phyo Portfolio",
     images: [
       {
-        url: defaultMeta.image,
+        url: "https://www.aungsannphyo.me/profile.jpeg",
         width: 1200,
-        height: 630,
-        alt: defaultMeta.title,
+        height: 627,
+        alt: "Aung Sann Phyo – Software Engineer",
       },
     ],
+    locale: "en_US",
     type: "website",
   },
-  alternates: {
-    canonical: defaultMeta.url,
+  twitter: {
+    card: "summary_large_image",
+    title: "Aung Sann Phyo – Software Engineer",
+    description:
+      "Personal portfolio of Aung Sann Phyo, a software engineer skilled in frontend, backend and mobile technologies.",
+    images: ["https://www.aungsannphyo.me/profile.jpeg"],
   },
 };
 
