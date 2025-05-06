@@ -1,6 +1,6 @@
 import DSImage from "@/public/language-image/ds.jpg"
 import { Article } from "../types/article-type";
-import { BE_PATTERNS, CE_PATTERNS, DESIGN_PATTERNS, OTHER, SOLID, ST_PATTENRS } from "@/enum/category-enum";
+import { ContentSubCategoryEnum, ContentCategoryEnum } from "@/enum/category-enum";
 
 const behavioral: Array<Article> = [{
     sectionTitle: "Chain Of Responsibility",
@@ -10,8 +10,8 @@ const behavioral: Array<Article> = [{
     branch: "master",
     path: "behavioral-patterns",
     markdown: "chain-of-responsibility.md",
-    categoryKey: DESIGN_PATTERNS,
-    subCategoryKey: BE_PATTERNS,
+    categoryKey: ContentCategoryEnum.DESIGN_PATTERNS,
+    subCategoryKey: ContentSubCategoryEnum.BE_PATTERNS,
     imageUrl: DSImage
 },]
 
@@ -24,8 +24,8 @@ const creational: Array<Article> = [
         branch: "master",
         path: "creational-patterns",
         markdown: "singleton-pattern.md",
-        categoryKey: DESIGN_PATTERNS,
-        subCategoryKey: CE_PATTERNS,
+        categoryKey: ContentCategoryEnum.DESIGN_PATTERNS,
+        subCategoryKey: ContentSubCategoryEnum.CE_PATTERNS,
         imageUrl: DSImage
     }, {
         sectionTitle: "Builder Pattern",
@@ -35,8 +35,8 @@ const creational: Array<Article> = [
         branch: "master",
         path: "creational-patterns",
         markdown: "builder-pattern.md",
-        categoryKey: DESIGN_PATTERNS,
-        subCategoryKey: CE_PATTERNS,
+        categoryKey: ContentCategoryEnum.DESIGN_PATTERNS,
+        subCategoryKey: ContentSubCategoryEnum.CE_PATTERNS,
         imageUrl: DSImage
     },
 
@@ -48,8 +48,8 @@ const creational: Array<Article> = [
         branch: "master",
         path: "creational-patterns",
         markdown: "factory-method.md",
-        categoryKey: DESIGN_PATTERNS,
-        subCategoryKey: CE_PATTERNS,
+        categoryKey: ContentCategoryEnum.DESIGN_PATTERNS,
+        subCategoryKey: ContentSubCategoryEnum.CE_PATTERNS,
         imageUrl: DSImage
     },]
 
@@ -61,8 +61,8 @@ const structural: Array<Article> = [{
     branch: "master",
     path: "structural-patterns",
     markdown: "adapter-pattern.md",
-    categoryKey: DESIGN_PATTERNS,
-    subCategoryKey: ST_PATTENRS,
+    categoryKey: ContentCategoryEnum.DESIGN_PATTERNS,
+    subCategoryKey: ContentSubCategoryEnum.ST_PATTENRS,
     imageUrl: DSImage
 },]
 
@@ -74,8 +74,8 @@ const solid: Array<Article> = [{
     branch: "master",
     path: "solid",
     markdown: "1-Single-Responsibility-Principle-(SRP).md",
-    categoryKey: DESIGN_PATTERNS,
-    subCategoryKey: SOLID,
+    categoryKey: ContentCategoryEnum.DESIGN_PATTERNS,
+    subCategoryKey: ContentSubCategoryEnum.SOLID,
     imageUrl: DSImage
 },
 {
@@ -86,8 +86,8 @@ const solid: Array<Article> = [{
     branch: "master",
     path: "solid",
     markdown: "2-OpenClose-Principle.md",
-    categoryKey: DESIGN_PATTERNS,
-    subCategoryKey: SOLID,
+    categoryKey: ContentCategoryEnum.DESIGN_PATTERNS,
+    subCategoryKey: ContentSubCategoryEnum.SOLID,
     imageUrl: DSImage
 },
 {
@@ -98,8 +98,8 @@ const solid: Array<Article> = [{
     branch: "master",
     path: "solid",
     markdown: "3-Liskov-Substitution-Principle.md",
-    categoryKey: DESIGN_PATTERNS,
-    subCategoryKey: SOLID,
+    categoryKey: ContentCategoryEnum.DESIGN_PATTERNS,
+    subCategoryKey: ContentSubCategoryEnum.SOLID,
     imageUrl: DSImage
 },
 {
@@ -110,8 +110,8 @@ const solid: Array<Article> = [{
     branch: "master",
     path: "solid",
     markdown: "4-Interface-Segregation-Principle.md",
-    categoryKey: DESIGN_PATTERNS,
-    subCategoryKey: SOLID,
+    categoryKey: ContentCategoryEnum.DESIGN_PATTERNS,
+    subCategoryKey: ContentSubCategoryEnum.SOLID,
     imageUrl: DSImage
 },
 {
@@ -122,8 +122,8 @@ const solid: Array<Article> = [{
     branch: "master",
     path: "solid",
     markdown: "5-Dependency-Inversion-Principle.md",
-    categoryKey: DESIGN_PATTERNS,
-    subCategoryKey: SOLID,
+    categoryKey: ContentCategoryEnum.DESIGN_PATTERNS,
+    subCategoryKey: ContentSubCategoryEnum.SOLID,
     imageUrl: DSImage
 },]
 
@@ -136,8 +136,8 @@ const other: Array<Article> = [{
     branch: "master",
     path: "",
     markdown: "composition-over-inheritance.md",
-    categoryKey: DESIGN_PATTERNS,
-    subCategoryKey: OTHER,
+    categoryKey: ContentCategoryEnum.DESIGN_PATTERNS,
+    subCategoryKey: ContentSubCategoryEnum.OTHER,
     imageUrl: DSImage
 }]
 

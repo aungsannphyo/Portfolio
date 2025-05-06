@@ -1,4 +1,4 @@
-import { BE_PATTERNS, CE_PATTERNS, DESIGN_PATTERNS, ES6, OTHER, SOLID, ST_PATTENRS } from "@/enum/category-enum"
+import { ContentCategoryEnum, ContentSubCategoryEnum } from "@/enum/category-enum"
 import { ContentCategory, ContentSubCategory } from "../types/content-type"
 
 
@@ -6,23 +6,23 @@ import { ContentCategory, ContentSubCategory } from "../types/content-type"
 const contentSubCategories: ContentSubCategory[] = [
     {
         subtitle: "Behavioral Patterns",
-        subCategoryKey: BE_PATTERNS
+        subCategoryKey: ContentSubCategoryEnum.BE_PATTERNS
     },
     {
         subtitle: "Creational Patterns",
-        subCategoryKey: CE_PATTERNS
+        subCategoryKey: ContentSubCategoryEnum.CE_PATTERNS
     },
     {
         subtitle: "SOLID",
-        subCategoryKey: SOLID
+        subCategoryKey: ContentSubCategoryEnum.SOLID
     },
     {
         subtitle: "Structural Patterns",
-        subCategoryKey: ST_PATTENRS
+        subCategoryKey: ContentSubCategoryEnum.ST_PATTENRS
     },
     {
         subtitle: "Other",
-        subCategoryKey: OTHER
+        subCategoryKey: ContentSubCategoryEnum.OTHER
     }
 ]
 
@@ -30,12 +30,12 @@ export const contentCategories: Array<ContentCategory> = [
     {
         id: 1001,
         category: "Introduction to ES6",
-        categoryKey: ES6
+        categoryKey: ContentCategoryEnum.ES6
     },
     {
         id: 2002,
         category: "Design Patterns",
-        categoryKey: DESIGN_PATTERNS,
+        categoryKey: ContentCategoryEnum.DESIGN_PATTERNS,
         subCategoryKeyList: contentSubCategories
     },
 ]

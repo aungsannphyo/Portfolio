@@ -2,16 +2,18 @@
 
 import React, { useState } from "react";
 import { contentCategories } from "@/features/content/data/content";
-import { ES6 } from "@/enum/category-enum";
 import { ContentCategory } from "@/features/content/types/content-type";
 import { IoArrowDown } from "react-icons/io5";
 import { getContentListByKey } from "@/services/content-handler";
 import ContentCategoryButton from "./content-category-button";
 import ContentInfo from "./content-info";
 import { Article } from "../articles/types/article-type";
+import { ContentCategoryEnum } from "@/enum/category-enum";
 
 const ContentCategories = () => {
-  const [categoryKey, setCategoryKey] = useState<string>(ES6);
+  const [categoryKey, setCategoryKey] = useState<string>(
+    ContentCategoryEnum.ES6
+  );
 
   const selectedCategory = contentCategories.find(
     (cat) => cat.categoryKey === categoryKey
