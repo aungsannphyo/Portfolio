@@ -3,6 +3,17 @@ import { Article } from "../types/article-type";
 import { ContentSubCategoryEnum, ContentCategoryEnum } from "@/enum/category-enum";
 
 const behavioral: Array<Article> = [{
+    sectionTitle: "Observer Pattern",
+    slug: "observer-pattern",
+    user: "aungsannphyo",
+    repo: "design-pattern",
+    branch: "master",
+    path: "behavioral-patterns",
+    markdown: "observer.md",
+    categoryKey: ContentCategoryEnum.DESIGN_PATTERNS,
+    subCategoryKey: ContentSubCategoryEnum.BE_PATTERNS,
+    imageUrl: DSImage
+}, {
     sectionTitle: "Chain Of Responsibility",
     slug: "chain-of-responsibility",
     user: "aungsannphyo",
