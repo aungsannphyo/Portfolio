@@ -7,7 +7,7 @@ export const defaultMeta: Metadata = {
   description:
     "Personal portfolio of Aung Sann Phyo, a software engineer skilled in frontend, backend and mobile technologies.",
   openGraph: {
-    title: "Aung San Xallet – Software Engineer",
+    title: "Aung Sann Phyo – Software Engineer",
     description:
       "Personal portfolio of Aung Sann Phyo, a software engineer skilled in frontend, backend and mobile technologies.",
     url: "https://www.aungsannphyo.me",
