@@ -12,7 +12,7 @@ import { ContentCategoryEnum } from "@/enum/category-enum";
 
 const ContentCategories = () => {
   const [categoryKey, setCategoryKey] = useState<string>(
-    ContentCategoryEnum.ES6
+    ContentCategoryEnum.DESIGN_PATTERNS
   );
 
   const selectedCategory = contentCategories.find(
