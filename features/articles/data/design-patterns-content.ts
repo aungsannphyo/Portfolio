@@ -13,8 +13,9 @@ const behavioral: Array<Article> = [{
     categoryKey: ContentCategoryEnum.DESIGN_PATTERNS,
     subCategoryKey: ContentSubCategoryEnum.BE_PATTERNS,
     imageUrl: DSImage
-}, {
-    sectionTitle: "Chain Of Responsibility",
+},
+{
+    sectionTitle: "Chain Of Responsibility Pattern",
     slug: "chain-of-responsibility",
     user: "aungsannphyo",
     repo: "design-pattern",
@@ -24,7 +25,20 @@ const behavioral: Array<Article> = [{
     categoryKey: ContentCategoryEnum.DESIGN_PATTERNS,
     subCategoryKey: ContentSubCategoryEnum.BE_PATTERNS,
     imageUrl: DSImage
-},]
+},
+{
+    sectionTitle: "Strategy Pattern",
+    slug: "strategy-pattern",
+    user: "aungsannphyo",
+    repo: "design-pattern",
+    branch: "master",
+    path: "behavioral-patterns",
+    markdown: "strategy-pattern",
+    categoryKey: ContentCategoryEnum.DESIGN_PATTERNS,
+    subCategoryKey: ContentSubCategoryEnum.BE_PATTERNS,
+    imageUrl: DSImage
+},
+]
 
 const creational: Array<Article> = [
     {
