@@ -1,6 +1,7 @@
 import "./globals.css";
 import Navbar from "@/components/nav/navbar";
 import { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 
 export const defaultMeta: Metadata = {
   title: "Aung Sann Phyo – Software Engineer",
@@ -41,7 +42,10 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-white text-black min-h-screen">
         <Navbar />
-        <div className="max-w-6xl mx-auto px-6 py-20">{children}</div>
+        <div className="max-w-6xl mx-auto px-6 py-20">
+          {children}
+          <Analytics />
+        </div>
       </body>
     </html>
   );
