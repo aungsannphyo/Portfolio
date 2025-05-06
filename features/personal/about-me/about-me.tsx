@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import universityLogo from "@/public/university.png";
-import ContactMe from "@/features/personal/contact-me/contact-me";
+import SocialLinks from "@/features/personal/contact-me/social-links";
 import { me, summary } from "@/features/personal/about-me/data/about";
 
 const AboutMe = () => {
@@ -17,8 +17,8 @@ const AboutMe = () => {
         <Image
           src={universityLogo}
           alt="University Logo"
-          width={150}
-          height={150}
+          width={120}
+          height={120}
           priority
           className="rounded-full"
         />
@@ -27,7 +27,7 @@ const AboutMe = () => {
           <p className="text-md text-gray-700">{me.bachelor}</p>
         </div>
       </div>
-      <ContactMe />
+      <SocialLinks />
     </div>
   );
 };

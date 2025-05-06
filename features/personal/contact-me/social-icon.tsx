@@ -9,11 +9,7 @@ interface IContactIcon {
   label: string;
 }
 
-const ContactMeIcon: React.FC<IContactIcon> = ({
-  Icon,
-  contactLink,
-  label,
-}) => {
+const SocialIcon: React.FC<IContactIcon> = ({ Icon, contactLink, label }) => {
   return (
     <a
       href={contactLink}
@@ -27,4 +23,4 @@ const ContactMeIcon: React.FC<IContactIcon> = ({
   );
 };
 
-export default ContactMeIcon;
+export default SocialIcon;

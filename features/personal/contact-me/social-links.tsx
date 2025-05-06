@@ -2,28 +2,28 @@
 
 import React from "react";
 import { FaGithub, FaLinkedin, FaDiscord, FaTelegram } from "react-icons/fa";
-import ContactMeIcon from "./contact-me-icon";
+import SocialIcon from "./social-icon";
 import { contactLink } from "@/features/personal/about-me/data/about";
 
-const ContactMe = () => {
+const SocialLinks = () => {
   return (
     <div className="flex justify-center md:justify-start items-center mt-8 gap-5 text-2xl">
-      <ContactMeIcon
+      <SocialIcon
         Icon={FaGithub}
         label="GitHub"
         contactLink={contactLink.github}
       />
-      <ContactMeIcon
+      <SocialIcon
         Icon={FaLinkedin}
         label="Linkedin"
         contactLink={contactLink.linkedin}
       />
-      <ContactMeIcon
+      <SocialIcon
         Icon={FaDiscord}
         label="Discord"
         contactLink={contactLink.discord}
       />
-      <ContactMeIcon
+      <SocialIcon
         Icon={FaTelegram}
         label="Telegram"
         contactLink={contactLink.telegram}
@@ -32,4 +32,4 @@ const ContactMe = () => {
   );
 };
 
-export default ContactMe;
+export default SocialLinks;
