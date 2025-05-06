@@ -46,7 +46,7 @@ export default async function ArticleDetails({
       <div
         className="prose prose-sm sm:prose-base md:prose-md prose-slate dark:prose-invert 
                     prose-headings:font-semibold prose-code:before:content-none 
-                    prose-code:after:content-none prose-pre:not-prose w-full max-w-3xl"
+                    prose-code:after:content-none prose-pre:not-prose w-full max-w-3xl tracking-wide"
       >
         <BackButton />
         <MarkdownRenderer content={markdown} />
