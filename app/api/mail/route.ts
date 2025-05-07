@@ -16,6 +16,7 @@ export async function POST(req: Request) {
     const mailOptions = {
         from: `"${name}" <${email}>`,
         to: process.env.SMTP_RECEIVER,
+        replyTo: email,
         subject: `New Contact from ${name}`,
         html: `
           <div style="font-family: Arial, sans-serif; background-color: #ffffff; color: #000000; padding: 24px; border: 1px solid #000000; max-width: 600px; margin: auto;">
