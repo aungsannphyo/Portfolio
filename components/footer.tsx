@@ -1,16 +1,24 @@
 "use client";
 
-import React from "react";
+import SocialLinks from "@/features/personal/contact-me/social-links";
+import React, { useEffect, useState } from "react";
 import { IoHeart } from "react-icons/io5";
 
 const Footer = () => {
+  const [year, setYear] = useState<string>("");
+
+  useEffect(() => {
+    setYear(new Date().getFullYear().toString());
+  }, []);
+
   return (
-    <footer className="bg-black text-white text-center py-2 mt-12">
+    <footer className="bg-white text-black tracking-wide text-center py-2 mt-12">
       <p>
-        © Copyright {new Date().getFullYear()} All rights reserved
+        © Copyright {year} All rights reserved
         <IoHeart className="ml-2 inline-block text-red-500" size={25} /> by Aung
         Sann Phyo
       </p>
+      <SocialLinks />
     </footer>
   );
 };

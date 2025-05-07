@@ -7,7 +7,7 @@ import { contactLink } from "@/features/personal/about-me/data/about";
 
 const SocialLinks = () => {
   return (
-    <div className="flex justify-center md:justify-start items-center mt-8 gap-5 text-2xl">
+    <div className="flex justify-center items-center mt-6 gap-5 text-2xl">
       <SocialIcon
         Icon={FaGithub}
         label="GitHub"
