@@ -91,7 +91,8 @@ const structural: Array<Article> = [
         categoryKey: ContentCategoryEnum.DESIGN_PATTERNS,
         subCategoryKey: ContentSubCategoryEnum.ST_PATTENRS,
         imageUrl: DSImage
-    }, {
+    },
+    {
         sectionTitle: "Decorator Pattern",
         slug: "decoratio-patern",
         user: "aungsannphyo",
@@ -102,7 +103,20 @@ const structural: Array<Article> = [
         categoryKey: ContentCategoryEnum.DESIGN_PATTERNS,
         subCategoryKey: ContentSubCategoryEnum.ST_PATTENRS,
         imageUrl: DSImage
-    },]
+    },
+    {
+        sectionTitle: "Proxy Pattern",
+        slug: "proxy-patern",
+        user: "aungsannphyo",
+        repo: "design-pattern",
+        branch: "master",
+        path: "proxy-patterns",
+        markdown: "proxy-pattern.md",
+        categoryKey: ContentCategoryEnum.DESIGN_PATTERNS,
+        subCategoryKey: ContentSubCategoryEnum.ST_PATTENRS,
+        imageUrl: DSImage
+    },
+]
 
 const solid: Array<Article> = [{
     sectionTitle: "Single Responsibility Principle ( SRP )",
