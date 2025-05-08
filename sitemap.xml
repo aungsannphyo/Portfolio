@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://www.aungsannphyo.me/</loc>
+  <lastmod>2025-05-08T18:17:42+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.aungsannphyo.me/content</loc>
+  <lastmod>2025-05-08T18:17:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.aungsannphyo.me/experience</loc>
+  <lastmod>2025-05-08T18:17:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.aungsannphyo.me/project</loc>
+  <lastmod>2025-05-08T18:17:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.aungsannphyo.me/content/observer-pattern?key=design_patterns</loc>
+  <lastmod>2025-05-08T18:17:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aungsannphyo.me/content/chain-of-responsibility?key=design_patterns</loc>
+  <lastmod>2025-05-08T18:17:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aungsannphyo.me/content/strategy-pattern?key=design_patterns</loc>
+  <lastmod>2025-05-08T18:17:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aungsannphyo.me/content/singleton-pattern?key=design_patterns</loc>
+  <lastmod>2025-05-08T18:17:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aungsannphyo.me/content/builder-pattern?key=design_patterns</loc>
+  <lastmod>2025-05-08T18:17:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aungsannphyo.me/content/factory-method?key=design_patterns</loc>
+  <lastmod>2025-05-08T18:17:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aungsannphyo.me/content/single-responsibility-principle?key=design_patterns</loc>
+  <lastmod>2025-05-08T18:17:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aungsannphyo.me/content/open-close-principle?key=design_patterns</loc>
+  <lastmod>2025-05-08T18:17:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aungsannphyo.me/content/liskov-substitution-principle?key=design_patterns</loc>
+  <lastmod>2025-05-08T18:17:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aungsannphyo.me/content/interface-segregation-principle?key=design_patterns</loc>
+  <lastmod>2025-05-08T18:17:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aungsannphyo.me/content/dependency-inversion-principle?key=design_patterns</loc>
+  <lastmod>2025-05-08T18:17:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aungsannphyo.me/content/adapter-patern?key=design_patterns</loc>
+  <lastmod>2025-05-08T18:17:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.aungsannphyo.me/content/composition-over-inheritance?key=design_patterns</loc>
+  <lastmod>2025-05-08T18:17:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
