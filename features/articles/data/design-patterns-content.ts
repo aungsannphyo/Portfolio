@@ -79,18 +79,30 @@ const creational: Array<Article> = [
         imageUrl: DSImage
     },]
 
-const structural: Array<Article> = [{
-    sectionTitle: "Adapter Pattern",
-    slug: "adapter-patern",
-    user: "aungsannphyo",
-    repo: "design-pattern",
-    branch: "master",
-    path: "structural-patterns",
-    markdown: "adapter-pattern.md",
-    categoryKey: ContentCategoryEnum.DESIGN_PATTERNS,
-    subCategoryKey: ContentSubCategoryEnum.ST_PATTENRS,
-    imageUrl: DSImage
-},]
+const structural: Array<Article> = [
+    {
+        sectionTitle: "Adapter Pattern",
+        slug: "adapter-patern",
+        user: "aungsannphyo",
+        repo: "design-pattern",
+        branch: "master",
+        path: "structural-patterns",
+        markdown: "adapter-pattern.md",
+        categoryKey: ContentCategoryEnum.DESIGN_PATTERNS,
+        subCategoryKey: ContentSubCategoryEnum.ST_PATTENRS,
+        imageUrl: DSImage
+    }, {
+        sectionTitle: "Decorator Pattern",
+        slug: "decoratio-patern",
+        user: "aungsannphyo",
+        repo: "design-pattern",
+        branch: "master",
+        path: "structural-patterns",
+        markdown: "decorator-pattern.md",
+        categoryKey: ContentCategoryEnum.DESIGN_PATTERNS,
+        subCategoryKey: ContentSubCategoryEnum.ST_PATTENRS,
+        imageUrl: DSImage
+    },]
 
 const solid: Array<Article> = [{
     sectionTitle: "Single Responsibility Principle ( SRP )",
