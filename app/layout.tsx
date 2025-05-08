@@ -3,6 +3,15 @@ import Navbar from "@/components/nav/navbar";
 import { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
 
+import { Poppins } from "next/font/google";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-poppins", // this will create a CSS variable
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.aungsannphyo.me"),
   title: "Aung Sann Phyo – Software Engineer",
@@ -40,7 +49,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={poppins.variable}>
       <body className="bg-white text-black min-h-screen">
         <Navbar />
         <div className="max-w-6xl mx-auto px-6 py-20">
