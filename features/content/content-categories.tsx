@@ -63,7 +63,7 @@ const ContentCategories = () => {
         {/* General Articles (not under subcategories) */}
         {generalArticles.length > 0 && (
           <div className="space-y-4">
-            <h3 className="text-2xl font-semibold border-b border-black pb-2">
+            <h3 className="text-xl tracking-wide font-semibold border-b border-gray-200 pb-2">
               Overview
             </h3>
             <ContentInfo articles={generalArticles} />
@@ -77,7 +77,7 @@ const ContentCategories = () => {
           );
           return subArticles.length > 0 ? (
             <div key={sub.subCategoryKey} className="space-y-4">
-              <h3 className="text-2xl font-semibold border-b border-black pb-2">
+              <h3 className="text-xl tracking-wide font-semibold border-b border-gray-200 pb-2">
                 {sub.subtitle}
               </h3>
               <ContentInfo articles={subArticles} />

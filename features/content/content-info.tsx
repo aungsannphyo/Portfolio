@@ -38,14 +38,15 @@ const ContentInfo = ({ articles }: { articles: Article[] }) => {
 
   return (
     <div className="space-y-6 mt-8">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {articles.map((article, index) => (
           <Link
             key={article.slug}
-            href={`/content/${article.slug}?key=${article.categoryKey}`}
-            className={`group border border-black rounded-xl overflow-hidden bg-white hover:shadow-md hover:scale-[1.01] transition-all ${
-              inView[index] ? "fade-in" : ""
-            }`}
+            href={`/article-series/${article.slug}?key=${article.categoryKey}`}
+            className={`group border border-gray-200 shadow-md rounded-xl overflow-hidden 
+               bg-white hover:shadow-lg hover:scale-[1.01] transition-all ${
+                 inView[index] ? "fade-in" : ""
+               }`}
             ref={(el) => {
               articleRefs.current[index] = el;
             }}
@@ -55,13 +56,13 @@ const ContentInfo = ({ articles }: { articles: Article[] }) => {
                 src={article.imageUrl}
                 alt={article.sectionTitle}
                 fill
-                className="object-cover"
+                className="object-cover "
                 sizes="(max-width: 768px) 100vw, 33vw"
                 priority
               />
             </div>
             <div className="p-4">
-              <h3 className="text-base font-semibold text-black group-hover:underline">
+              <h3 className="text-base font-semibold text-black">
                 {article.sectionTitle}
               </h3>
             </div>

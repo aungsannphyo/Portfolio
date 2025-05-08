@@ -28,15 +28,15 @@ const contentSubCategories: ContentSubCategory[] = [
 
 export const contentCategories: Array<ContentCategory> = [
     {
-        id: 1001,
-        category: "Introduction to ES6",
-        categoryKey: ContentCategoryEnum.ES6
-    },
-    {
         id: 2002,
         category: "Design Patterns",
         categoryKey: ContentCategoryEnum.DESIGN_PATTERNS,
         subCategoryKeyList: contentSubCategories
+    },
+    {
+        id: 1001,
+        category: "Introduction to ES6",
+        categoryKey: ContentCategoryEnum.ES6
     },
 ]
 
