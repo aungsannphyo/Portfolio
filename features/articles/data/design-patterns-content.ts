@@ -110,7 +110,7 @@ const structural: Array<Article> = [
         user: "aungsannphyo",
         repo: "design-pattern",
         branch: "master",
-        path: "proxy-patterns",
+        path: "structural-patterns",
         markdown: "proxy-pattern.md",
         categoryKey: ContentCategoryEnum.DESIGN_PATTERNS,
         subCategoryKey: ContentSubCategoryEnum.ST_PATTENRS,
