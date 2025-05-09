@@ -1,8 +1,8 @@
 "use client";
 
-import SocialLinks from "@/features/personal/contact-me/social-links";
 import React, { useEffect, useState } from "react";
 import { IoHeart } from "react-icons/io5";
+import SocialLinks from "./social-links";
 
 const Footer = () => {
   const [year, setYear] = useState<string>("");

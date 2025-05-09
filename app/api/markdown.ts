@@ -27,7 +27,7 @@ export async function fetchMarkdownFromGithub(article: Article): Promise<string>
 export async function getMarkdownArticleData(
     slug: string,
     categoryKey: string
-): Promise<{ markdown: string; article?: Article }> {
+): Promise<{ markdown?: string; article?: Article, errorMessage: string }> {
     const article = getArticle(slug, categoryKey);
 
     if (!article) {
@@ -35,8 +35,9 @@ export async function getMarkdownArticleData(
     }
     try {
         const markdown = await fetchMarkdownFromGithub(article);
-        return { markdown, article };
-    } catch (error) {
-        throw new Error(`Error getting markdown data for article ${slug}: ${error}`)
+        return { article: article, markdown: markdown, errorMessage: "" };
+    } catch (err) {
+        const errorMessage = err instanceof Error ? err.message : "An unknown error occurred.";
+        return { article: undefined, markdown: undefined, errorMessage };
     }
 }
