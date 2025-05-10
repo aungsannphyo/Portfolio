@@ -5,6 +5,8 @@ import ReactMarkdown from "react-markdown";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import { Components } from "react-markdown";
+import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
 
 interface MarkdownRendererProps {
   content: string;
@@ -66,7 +68,15 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content }) => {
     },
   };
 
-  return <ReactMarkdown components={components}>{content}</ReactMarkdown>;
+  return (
+    <ReactMarkdown
+      rehypePlugins={[rehypeRaw]}
+      remarkPlugins={[remarkGfm]}
+      components={components}
+    >
+      {content}
+    </ReactMarkdown>
+  );
 };
 
 export default MarkdownRenderer;

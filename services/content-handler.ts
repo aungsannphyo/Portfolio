@@ -1,3 +1,4 @@
+import { dsAndAlgoArticle } from "@/features/articles/data/data-structure-and-algorithms"
 import { designPatternArticle } from "@/features/articles/data/design-patterns-content"
 import { es6Article } from "@/features/articles/data/es6-content"
 import { Article } from "@/features/articles/types/article-type"
@@ -15,16 +16,25 @@ class ES6ContentHandler implements ContentHandler {
     }
 }
 
-class DesignContentPatternHandler implements ContentHandler {
+class DesignPatternContentHandler implements ContentHandler {
     handle(categoryKey: string, subCategoryKey: string): Array<Article> {
         return designPatternArticle.filter(ds => ds.categoryKey === categoryKey &&
             ds.subCategoryKey === subCategoryKey)
     }
 }
 
+
+class DataStruAndAlgoContentHandler implements ContentHandler {
+    handle(categoryKey: string, subCategoryKey: string): Array<Article> {
+        return dsAndAlgoArticle.filter(ds => ds.categoryKey === categoryKey &&
+            ds.subCategoryKey === subCategoryKey)
+    }
+}
+
 const contentHandlerMap: Record<string, ContentHandler> = {
     es6: new ES6ContentHandler(),
-    design_patterns: new DesignContentPatternHandler()
+    design_patterns: new DesignPatternContentHandler(),
+    data_structure_and_algorithms: new DataStruAndAlgoContentHandler()
 }
 
 export const getContentListByKey = (categoryKey: string, subCategoryKey?: string): Array<Article> => {

@@ -1,43 +1,68 @@
-import { ContentCategoryEnum, ContentSubCategoryEnum } from "@/enum/category-enum"
+import { ContentCategoryEnum, DesignPatternSubCategories, DataStructureAndAlgorithmsSubCategories } from "@/enum/category-enum"
 import { ContentCategory, ContentSubCategory } from "../types/content-type"
 
 
 
-const contentSubCategories: ContentSubCategory[] = [
+const designPatternSubCategories: ContentSubCategory[] = [
     {
         subtitle: "Behavioral Patterns",
-        subCategoryKey: ContentSubCategoryEnum.BE_PATTERNS
+        subCategoryKey: DesignPatternSubCategories.BE_PATTERNS
     },
     {
         subtitle: "Creational Patterns",
-        subCategoryKey: ContentSubCategoryEnum.CE_PATTERNS
+        subCategoryKey: DesignPatternSubCategories.CE_PATTERNS
     },
     {
         subtitle: "SOLID",
-        subCategoryKey: ContentSubCategoryEnum.SOLID
+        subCategoryKey: DesignPatternSubCategories.SOLID
     },
     {
         subtitle: "Structural Patterns",
-        subCategoryKey: ContentSubCategoryEnum.ST_PATTENRS
+        subCategoryKey: DesignPatternSubCategories.ST_PATTENRS
     },
     {
         subtitle: "Other",
-        subCategoryKey: ContentSubCategoryEnum.OTHER
+        subCategoryKey: DesignPatternSubCategories.OTHER
     }
 ]
 
-export const contentCategories: Array<ContentCategory> = [
+
+const dataStructureAndAlgorithmsSubCategories: ContentSubCategory[] = [
     {
-        id: 2002,
-        category: "Design Patterns",
-        categoryKey: ContentCategoryEnum.DESIGN_PATTERNS,
-        subCategoryKeyList: contentSubCategories
+        subtitle: "Introduction",
+        subCategoryKey: DataStructureAndAlgorithmsSubCategories.INTRODUCTION
     },
     {
+        subtitle: "Numbering System",
+        subCategoryKey: DataStructureAndAlgorithmsSubCategories.NUMBERING_SYSTEM
+    },
+    {
+        subtitle: "Boolean Algebra",
+        subCategoryKey: DataStructureAndAlgorithmsSubCategories.BOOLEAN_ALGEBRA
+    },
+]
+
+
+
+export const contentCategories: Array<ContentCategory> = [
+    {
         id: 1001,
+        category: "Design Patterns",
+        categoryKey: ContentCategoryEnum.DESIGN_PATTERNS,
+        subCategoryKeyList: designPatternSubCategories
+    },
+    {
+        id: 2002,
+        category: "Data Structure And Algorithms",
+        categoryKey: ContentCategoryEnum.DS_AND_ALGO,
+        subCategoryKeyList: dataStructureAndAlgorithmsSubCategories
+    },
+    {
+        id: 3003,
         category: "Introduction to ES6",
         categoryKey: ContentCategoryEnum.ES6
     },
+
 ]
 
 

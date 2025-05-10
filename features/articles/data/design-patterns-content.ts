@@ -1,6 +1,6 @@
 import DSImage from "@/public/language-image/ds.jpg"
 import { Article } from "../types/article-type";
-import { ContentSubCategoryEnum, ContentCategoryEnum } from "@/enum/category-enum";
+import { DesignPatternSubCategories, ContentCategoryEnum } from "@/enum/category-enum";
 
 const behavioral: Array<Article> = [
     {
@@ -12,7 +12,7 @@ const behavioral: Array<Article> = [
         path: "behavioral-patterns",
         markdown: "observer.md",
         categoryKey: ContentCategoryEnum.DESIGN_PATTERNS,
-        subCategoryKey: ContentSubCategoryEnum.BE_PATTERNS,
+        subCategoryKey: DesignPatternSubCategories.BE_PATTERNS,
         imageUrl: DSImage
     },
     {
@@ -24,7 +24,7 @@ const behavioral: Array<Article> = [
         path: "behavioral-patterns",
         markdown: "chain-of-responsibility.md",
         categoryKey: ContentCategoryEnum.DESIGN_PATTERNS,
-        subCategoryKey: ContentSubCategoryEnum.BE_PATTERNS,
+        subCategoryKey: DesignPatternSubCategories.BE_PATTERNS,
         imageUrl: DSImage
     },
     {
@@ -36,7 +36,7 @@ const behavioral: Array<Article> = [
         path: "behavioral-patterns",
         markdown: "strategy-pattern.md",
         categoryKey: ContentCategoryEnum.DESIGN_PATTERNS,
-        subCategoryKey: ContentSubCategoryEnum.BE_PATTERNS,
+        subCategoryKey: DesignPatternSubCategories.BE_PATTERNS,
         imageUrl: DSImage
     },
 ]
@@ -51,7 +51,7 @@ const creational: Array<Article> = [
         path: "creational-patterns",
         markdown: "singleton-pattern.md",
         categoryKey: ContentCategoryEnum.DESIGN_PATTERNS,
-        subCategoryKey: ContentSubCategoryEnum.CE_PATTERNS,
+        subCategoryKey: DesignPatternSubCategories.CE_PATTERNS,
         imageUrl: DSImage
     }, {
         sectionTitle: "Builder Pattern",
@@ -62,7 +62,7 @@ const creational: Array<Article> = [
         path: "creational-patterns",
         markdown: "builder-pattern.md",
         categoryKey: ContentCategoryEnum.DESIGN_PATTERNS,
-        subCategoryKey: ContentSubCategoryEnum.CE_PATTERNS,
+        subCategoryKey: DesignPatternSubCategories.CE_PATTERNS,
         imageUrl: DSImage
     },
 
@@ -75,7 +75,7 @@ const creational: Array<Article> = [
         path: "creational-patterns",
         markdown: "factory-method.md",
         categoryKey: ContentCategoryEnum.DESIGN_PATTERNS,
-        subCategoryKey: ContentSubCategoryEnum.CE_PATTERNS,
+        subCategoryKey: DesignPatternSubCategories.CE_PATTERNS,
         imageUrl: DSImage
     },]
 
@@ -89,7 +89,7 @@ const structural: Array<Article> = [
         path: "structural-patterns",
         markdown: "adapter-pattern.md",
         categoryKey: ContentCategoryEnum.DESIGN_PATTERNS,
-        subCategoryKey: ContentSubCategoryEnum.ST_PATTENRS,
+        subCategoryKey: DesignPatternSubCategories.ST_PATTENRS,
         imageUrl: DSImage
     },
     {
@@ -101,7 +101,7 @@ const structural: Array<Article> = [
         path: "structural-patterns",
         markdown: "decorator-pattern.md",
         categoryKey: ContentCategoryEnum.DESIGN_PATTERNS,
-        subCategoryKey: ContentSubCategoryEnum.ST_PATTENRS,
+        subCategoryKey: DesignPatternSubCategories.ST_PATTENRS,
         imageUrl: DSImage
     },
     {
@@ -113,7 +113,7 @@ const structural: Array<Article> = [
         path: "structural-patterns",
         markdown: "proxy-pattern.md",
         categoryKey: ContentCategoryEnum.DESIGN_PATTERNS,
-        subCategoryKey: ContentSubCategoryEnum.ST_PATTENRS,
+        subCategoryKey: DesignPatternSubCategories.ST_PATTENRS,
         imageUrl: DSImage
     },
 ]
@@ -127,7 +127,7 @@ const solid: Array<Article> = [{
     path: "solid",
     markdown: "1-Single-Responsibility-Principle-(SRP).md",
     categoryKey: ContentCategoryEnum.DESIGN_PATTERNS,
-    subCategoryKey: ContentSubCategoryEnum.SOLID,
+    subCategoryKey: DesignPatternSubCategories.SOLID,
     imageUrl: DSImage
 },
 {
@@ -139,7 +139,7 @@ const solid: Array<Article> = [{
     path: "solid",
     markdown: "2-OpenClose-Principle.md",
     categoryKey: ContentCategoryEnum.DESIGN_PATTERNS,
-    subCategoryKey: ContentSubCategoryEnum.SOLID,
+    subCategoryKey: DesignPatternSubCategories.SOLID,
     imageUrl: DSImage
 },
 {
@@ -151,7 +151,7 @@ const solid: Array<Article> = [{
     path: "solid",
     markdown: "3-Liskov-Substitution-Principle.md",
     categoryKey: ContentCategoryEnum.DESIGN_PATTERNS,
-    subCategoryKey: ContentSubCategoryEnum.SOLID,
+    subCategoryKey: DesignPatternSubCategories.SOLID,
     imageUrl: DSImage
 },
 {
@@ -163,7 +163,7 @@ const solid: Array<Article> = [{
     path: "solid",
     markdown: "4-Interface-Segregation-Principle.md",
     categoryKey: ContentCategoryEnum.DESIGN_PATTERNS,
-    subCategoryKey: ContentSubCategoryEnum.SOLID,
+    subCategoryKey: DesignPatternSubCategories.SOLID,
     imageUrl: DSImage
 },
 {
@@ -175,7 +175,7 @@ const solid: Array<Article> = [{
     path: "solid",
     markdown: "5-Dependency-Inversion-Principle.md",
     categoryKey: ContentCategoryEnum.DESIGN_PATTERNS,
-    subCategoryKey: ContentSubCategoryEnum.SOLID,
+    subCategoryKey: DesignPatternSubCategories.SOLID,
     imageUrl: DSImage
 },]
 
@@ -189,7 +189,7 @@ const other: Array<Article> = [{
     path: "",
     markdown: "composition-over-inheritance.md",
     categoryKey: ContentCategoryEnum.DESIGN_PATTERNS,
-    subCategoryKey: ContentSubCategoryEnum.OTHER,
+    subCategoryKey: DesignPatternSubCategories.OTHER,
     imageUrl: DSImage
 }]
 
