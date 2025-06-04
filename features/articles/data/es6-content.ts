@@ -69,7 +69,7 @@ export const es6Article: Array<Article> = [
                 repo: "introduction-to-es6",
                 branch: "master",
                 path: "es6",
-                markdown: "5-default-parameter - and - rest - parameter.md",
+                markdown: "5-default-parameter-and-rest-parameter.md",
         },
         {
 

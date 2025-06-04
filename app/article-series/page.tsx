@@ -15,4 +15,5 @@ const ContentPage = () => {
   );
 };
 
-export default ContentPage;
+ export default ContentPage;
+
