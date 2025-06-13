@@ -40,6 +40,14 @@ const dataStructureAndAlgorithmsSubCategories: ContentSubCategory[] = [
         subtitle: "Boolean Algebra",
         subCategoryKey: DataStructureAndAlgorithmsSubCategories.BOOLEAN_ALGEBRA
     },
+    {
+        subtitle: "Data Structure And Algorithm",
+        subCategoryKey: DataStructureAndAlgorithmsSubCategories.DATA_STRUCTURE_ALGORITHM
+    },
+    {
+        subtitle: "Control Flow and Flow Chart",
+        subCategoryKey: DataStructureAndAlgorithmsSubCategories.CONTROL_FLOW_CHART
+    },
 ]
 
 

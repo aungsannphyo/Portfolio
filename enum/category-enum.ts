@@ -16,5 +16,7 @@ export const enum DesignPatternSubCategories {
 export const enum DataStructureAndAlgorithmsSubCategories {
     INTRODUCTION = "introduction",
     NUMBERING_SYSTEM = "numbering_system",
-    BOOLEAN_ALGEBRA = "boolean_algebra"
+    BOOLEAN_ALGEBRA = "boolean_algebra",
+    DATA_STRUCTURE_ALGORITHM = "data_structure_and_algorithm",
+    CONTROL_FLOW_CHART = "control_flow_and_flow_chart"
 }

@@ -121,9 +121,77 @@ const booleanAlgebra: Array<Article> = [
     },
 ]
 
+const dsAndAlgorithm : Array<Article> = [
+        {
+        sectionTitle: "Introduction",
+        slug: "data-structure-and-algorithm",
+        user: "aungsannphyo",
+        repo: "data-structure-and-algorithms",
+        branch: "master",
+        path: "4-data_structure_&_algorithm",
+        markdown: "introduction.md",
+        categoryKey: ContentCategoryEnum.DS_AND_ALGO,
+        subCategoryKey: DataStructureAndAlgorithmsSubCategories.DATA_STRUCTURE_ALGORITHM,
+        imageUrl: DS_AND_ALGO
+    },
+]
+
+const controlFlowChart : Array<Article> = [
+        {
+        sectionTitle: "Control Flow and Flow Chart Part 1",
+        slug: "control-flow-and-flow-chart-1",
+        user: "aungsannphyo",
+        repo: "data-structure-and-algorithms",
+        branch: "master",
+        path: "5-control_flow_and_flow_chart",
+        markdown: "/control_flow_and_flow_chart_part_1.md",
+        categoryKey: ContentCategoryEnum.DS_AND_ALGO,
+        subCategoryKey: DataStructureAndAlgorithmsSubCategories.CONTROL_FLOW_CHART,
+        imageUrl: DS_AND_ALGO
+    },
+    {
+        sectionTitle: "Control Flow and Flow Chart Part 2",
+        slug: "control-flow-and-flow-chart-2",
+        user: "aungsannphyo",
+        repo: "data-structure-and-algorithms",
+        branch: "master",
+        path: "5-control_flow_and_flow_chart",
+        markdown: "/control_flow_and_flow_chart_part_2.md",
+        categoryKey: ContentCategoryEnum.DS_AND_ALGO,
+        subCategoryKey: DataStructureAndAlgorithmsSubCategories.CONTROL_FLOW_CHART,
+        imageUrl: DS_AND_ALGO
+    },
+    {
+        sectionTitle: "Control Flow and Flow Chart Part 3",
+        slug: "control-flow-and-flow-chart-3",
+        user: "aungsannphyo",
+        repo: "data-structure-and-algorithms",
+        branch: "master",
+        path: "5-control_flow_and_flow_chart",
+        markdown: "/control_flow_and_flow_chart_part_3.md",
+        categoryKey: ContentCategoryEnum.DS_AND_ALGO,
+        subCategoryKey: DataStructureAndAlgorithmsSubCategories.CONTROL_FLOW_CHART,
+        imageUrl: DS_AND_ALGO
+    },
+    {
+        sectionTitle: "Control Flow and Flow Chart Part 4",
+        slug: "control-flow-and-flow-chart-4",
+        user: "aungsannphyo",
+        repo: "data-structure-and-algorithms",
+        branch: "master",
+        path: "5-control_flow_and_flow_chart",
+        markdown: "/control_flow_and_flow_chart_part_4.md",
+        categoryKey: ContentCategoryEnum.DS_AND_ALGO,
+        subCategoryKey: DataStructureAndAlgorithmsSubCategories.CONTROL_FLOW_CHART,
+        imageUrl: DS_AND_ALGO
+    },
+]
+
 
 export const dsAndAlgoArticle: Array<Article> = [
     ...introduction,
     ...numberingSystem,
-    ...booleanAlgebra
+    ...booleanAlgebra,
+    ...dsAndAlgorithm,
+    ...controlFlowChart,
 ]
